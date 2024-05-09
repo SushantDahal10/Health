@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { FaHome, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import { IoIosFitness, IoFitness } from "react-icons/io5";
+import { IoIosFitness, IoFitness } from "react-icons/io";
 import { PiSignOutBold } from "react-icons/pi";
 import { GiHotMeal } from "react-icons/gi";
 import axios from 'axios';

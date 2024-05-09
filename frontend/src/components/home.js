@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
 import { MdFoodBank } from "react-icons/md";
 import { IoIosFitness } from "react-icons/io";
-import { IoFitness } from "react-icons/io5";
+import { IoFitness } from "react-icons/io";
 import { PiSignOutBold } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 import { FaUserAlt } from "react-icons/fa";
