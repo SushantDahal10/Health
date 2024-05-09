@@ -22,7 +22,7 @@ export default function Fitness() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://backendhealth-ypra.onrender.com/api/user/dashboard', {
+        const response = await fetch('https://health-hi33.onrender.com/api/user/dashboard', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -52,7 +52,7 @@ export default function Fitness() {
 
       setError('');
 
-      const response = await axios.get('https://backendhealth-ypra.onrender.com/api/user/workoutplan', {
+      const response = await axios.get('https://health-hi33.onrender.com/api/user/workoutplan', {
         params: {
           muscle,
         }

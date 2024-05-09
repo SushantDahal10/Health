@@ -38,7 +38,7 @@ const Signup = () => {
     try {
     
 
-      const fetchdata = await fetch('https://backendhealth.onrender.com/api/user/signup', {
+      const fetchdata = await fetch('https://health-hi33.onrender.com/api/user/signup', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',

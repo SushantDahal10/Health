@@ -21,7 +21,7 @@ export default function Home() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://backendhealth-ypra.onrender.com/api/user/dashboard', {
+        const response = await fetch('https://health-hi33.onrender.com/api/user/dashboard', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -49,7 +49,7 @@ export default function Home() {
     const fetchNutrientData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://backendhealth-ypra.onrender.com/api/user/nutrient', {
+        const response = await fetch('https://health-hi33.onrender.com/api/user/nutrient', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`

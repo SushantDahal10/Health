@@ -33,7 +33,7 @@ export default function Signup() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://backendhealth-ypra.onrender.com/api/user/dashboard', {
+        const response = await fetch('https://health-hi33.onrender.com/api/user/dashboard', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -61,7 +61,7 @@ export default function Signup() {
     e.preventDefault();
   
     try {
-      const fetchdata = await fetch('https://backendhealth-ypra.onrender.com/api/user/update', {
+      const fetchdata = await fetch('https://health-hi33.onrender.com/api/user/update', {
         method: 'PATCH',
         headers: {
           'content-type': 'application/json',

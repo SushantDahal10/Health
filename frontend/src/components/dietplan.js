@@ -39,7 +39,7 @@ export default function Dietplan() {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch('https://backendhealth-ypra.onrender.com/api/user/dashboard', {
+        const response = await fetch('https://health-hi33.onrender.com/api/user/dashboard', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
@@ -70,7 +70,7 @@ export default function Dietplan() {
         setMealData(JSON.parse(cachedMealPlan));
       } else {
         const token = localStorage.getItem('token');
-        const response = await axios.get('https://backendhealth-ypra.onrender.com/api/user/mealplan', {
+        const response = await axios.get('https://health-hi33.onrender.com/api/user/mealplan', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
