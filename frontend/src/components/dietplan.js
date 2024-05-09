@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { FaHome, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import { IoIosFitness, IoFitness } from "react-icons/io";
+import { MdOutlineFitnessCenter } from "react-icons/md";
 import { PiSignOutBold } from "react-icons/pi";
 import { GiHotMeal } from "react-icons/gi";
 import axios from 'axios';
@@ -188,12 +188,12 @@ export default function Dietplan() {
           </a>
           <a onClick={() => navigateTo('/dashboard/fitness', 'fitness')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'fitness' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoIosFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Fitness</span>
           </a>
           <a onClick={() => navigateTo('/dashboard/health', 'update')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'update' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Update Info</span>
           </a>
         </nav>

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { IoIosFitness } from "react-icons/io";
-import { IoFitness } from "react-icons/io";
+import { MdOutlineFitnessCenter } from "react-icons/md";
 import { PiSignOutBold } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 import { GiHotMeal } from "react-icons/gi";
@@ -119,12 +118,12 @@ export default function Fitness() {
           </a>
           <a onClick={() => navigateTo('/dashboard/fitness', 'fitness')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'fitness' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoIosFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Fitness</span>
           </a>
           <a onClick={() => navigateTo('/dashboard/health', 'update')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'update' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Update Info</span>
           </a>
         </nav>

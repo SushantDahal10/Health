@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
 import { MdFoodBank } from "react-icons/md";
-import { IoIosFitness } from "react-icons/io";
-import { IoFitness } from "react-icons/io";
+import { MdOutlineFitnessCenter } from "react-icons/md";
 import { PiSignOutBold } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 import { FaUserAlt } from "react-icons/fa";
@@ -125,12 +124,12 @@ export default function Home() {
           </a>
           <a onClick={() => navigateTo('/dashboard/fitness', 'fitness')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'fitness' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoIosFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Fitness</span>
           </a>
           <a onClick={() => navigateTo('/dashboard/health', 'update')}
             className={`block py-2 px-4 rounded transition duration-300 ${activePage === 'update' ? 'bg-gray-800 text-gray-200' : 'hover:bg-gray-800 hover:text-gray-200'}`}>
-            <IoFitness className="inline" />
+            <MdOutlineFitnessCenter className="inline" />
             <span className="ml-2 text-base">Update Info</span>
           </a>
         </nav>
@@ -157,7 +156,7 @@ export default function Home() {
             {nutrientData && (
               <div className="bg-white rounded-lg shadow-md p-4 col-span-4 lg:col-span-2"> {/* Adjusted column span */}
                 <div className="flex items-center mb-4">
-                  <IoIosFitness className="text-2xl text-blue-500 mr-2" />
+                  <MdOutlineFitnessCenter className="text-2xl text-blue-500 mr-2" />
                   <h3 className="text-lg font-semibold">Nutrition</h3>
                 </div>
                 <p>Estimated Daily Caloric Needs: {nutrientData.BMI_EER["Estimated Daily Caloric Needs"]}</p>
