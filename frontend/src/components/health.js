@@ -181,13 +181,13 @@ const Signup = () => {
             <span className="ml-2">Sign Out</span>
           </button>
         </header>
-        <div className="fles mt-2 min-h-screen bg-gray-100">
+        <div className="flex mt-2 min-h-screen bg-gray-100">
           <div className="w-full md:w-3/4 lg:w-4/5 xl:w-5/6 mx-auto p-8">
             <div className="relative">
               <div className="bg-gray-100 bg-opacity-80 rounded-lg p-8 overflow-y-auto max-h-screen">
                 <div className="text-3xl font-serif text-black mb-4">Update User Data!</div>
                 <form onSubmit={submittobackend} method='POST' className="grid grid-cols-1 md:grid-cols-2 gap-6 rounded-lg mt-8">
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="space-y-2 mt-6">
                       <label htmlFor="email" className="block text-black">Email:</label>
                       <input 
@@ -202,7 +202,7 @@ const Signup = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="space-y-2">
                       <label htmlFor="password" className="block text-black">Password:</label>
                       <div className="flex items-center">
@@ -213,7 +213,7 @@ const Signup = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="space-y-2">
                       <label htmlFor="age">Age:</label>
                       <input
@@ -232,7 +232,7 @@ const Signup = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="space-y-2">
                       <label htmlFor="height">Height (in cm):</label>
                       <input
@@ -251,7 +251,7 @@ const Signup = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="space-y-2">
                       <label htmlFor="weight">Weight (in kg):</label>
                       <input
@@ -270,7 +270,7 @@ const Signup = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-2 md:col-span-2">
+                  <div className="col-span-2 md:col-span-1">
                     <div className="input">
                       <label htmlFor="gender">Gender:</label>
                       <select id="gender" name="gender" value={data.gender} onChange={handleInputChange} required>
@@ -283,7 +283,7 @@ const Signup = () => {
                   </div>
 
                   {showPregnancyInput && (
-                    <div className="col-span-2 md:col-span-2">
+                    <div className="col-span-2 md:col-span-1">
                       <div className="space-y-2">
                         <label htmlFor="pregnancy" className="block text-black">Pregnancy:</label>
                         <select id="pregnancy" name="pregnancy" value={data.pregnancy} onChange={handleInputChange} className="input-style">
