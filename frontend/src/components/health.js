@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { GiHotMeal } from "react-icons/gi";
 import logo from '../Images/logo.jpg';
-import {  useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 export default function Signup() {
   const [showPregnancyInput, setShowPregnancyInput] = useState(false);
   const history = useNavigate();
@@ -28,6 +29,7 @@ export default function Signup() {
   function togglePasswordVisibility() {
     setPasswords(!passwords);
   }
+  
   useEffect(() => {
     const fetchUserData = async () => {
       try {
@@ -73,6 +75,7 @@ export default function Signup() {
       if (fetchdata.ok) {
         localStorage.setItem('token', datares.token);
         alert(datares.success);
+        window.location.reload(); // Refresh the page
       } else {
         alert(datares.error);
       }
@@ -102,12 +105,10 @@ export default function Signup() {
     setActivePage(location.pathname.split("/")[2]);
   }, [location.pathname]);
   
-
   const navigateTo = (path, page) => {
     history(path);
     // Remove setActivePage(page) from here
   };
-  
 
   const handleLogout = () => {
     localStorage.removeItem('token');
