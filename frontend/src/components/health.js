@@ -185,12 +185,8 @@ const Signup = () => {
             <div className="bg-gray-100 bg-opacity-80 rounded-lg p-8 overflow-y-auto max-h-screen">
               <div className="text-3xl font-serif text-black mb-4">Update User Data!</div>
               <form onSubmit={submittobackend} className="grid grid-cols-1 md:grid-cols-2 gap-6 py-10">
-                <div className="col-span-2 md:col-span-2">
-                  <div className="space-y-2">
-                    <label htmlFor="fullName" className="block text-black">Full Name:</label>
-                    <input type="text" id="fullName" name="fullname" value={data.fullname} onChange={handleInputChange} placeholder={userData && userData.fullname} className="input-style" />
-                  </div>
-                </div>
+              
+                
                 <div className="col-span-2 md:col-span-1">
                   <div className="space-y-2">
                     <label htmlFor="email" className="block text-black">Email:</label>
